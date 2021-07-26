@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #070707;
+  overflow: hidden;
+}
+
+.main {
+  background-color: hsl(185, 48%, 37%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 28rem;
+  width: 28rem;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.37);
+  z-index: 1;
+}
+.card-header {
+  background-image: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 150px;
+}
+
+/* Profile Image  */
+.img-holder {
+  width: 120px;
+  height: 120px;
+  margin: -80px auto 50px auto;
+}
+
+.img-holder img {
+  border-radius: 100%;
+  border: solid 5px #fff;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 0 20px 30px;
+  border-bottom: hsla(0, 0%, 59%, 0.438) 0.5px solid;
+  padding-bottom: 5rem;
+}
+
+/* Name-Age-Location Text */
+.name-age {
+  text-align: center;
+  margin-top: -2rem;
+  color: hsl(229, 23%, 23%);
+}
+
+.user-age {
+  padding-left: 5px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.location {
+  padding-top: 10px;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 2.3rem;
+  font-size: 25px;
+}
+
+.value {
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.meta {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  padding-top: 5px;
+  color: hsl(0, 0%, 59%);
+}
+
+/* svg background */
+.c1,
+.c2 {
+  position: absolute;
+}
+
+.c1 {
+  transform: translate(-35%, -55%);
+}
+
+.c2 {
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 65%);
+}
+
+@media screen and (max-width: 706px) {
+  .c1 {
+    transform: translate(-70%, -55%);
+  }
+  .c2 {
+    transform: translate(70%, 55%);
+  }
+}
+
+@media screen and (max-width: 706px) {
+  .c1 {
+    transform: translate(-70%, -55%);
+  }
+  .c2 {
+    transform: translate(70%, 55%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .c2 {
+    transform: translate(70%, 75%);
+  }
+} ;
